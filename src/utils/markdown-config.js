@@ -5,12 +5,10 @@ export async function createMarkdownPreview(theme = 'github') {
   // 基础预览组件 + 插件（与主题无关）
   const [
     { default: VMdPreview },
-    { default: createLineNumbertPlugin },
     { default: createCopyCodePlugin },
     { default: createHighlightLinesPlugin },
   ] = await Promise.all([
     import('@kangc/v-md-editor/lib/preview'),
-    import('@kangc/v-md-editor/lib/plugins/line-number/index'),
     import('@kangc/v-md-editor/lib/plugins/copy-code/index'),
     import('@kangc/v-md-editor/lib/plugins/highlight-lines/index'),
   ]);
@@ -97,7 +95,6 @@ export async function createMarkdownPreview(theme = 'github') {
   }
 
   return preview
-    .use(createLineNumbertPlugin())
     .use(createCopyCodePlugin())
     .use(createHighlightLinesPlugin());
 }

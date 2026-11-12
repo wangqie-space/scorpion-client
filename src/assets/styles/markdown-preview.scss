@@ -70,15 +70,6 @@
     color: rgb(var(--v-theme-on-surface)) !important;
   }
 
-  // 行号：背景 + 文字
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode::after {
-    background-color: rgb(var(--v-theme-surface-variant)) !important;
-    border-right-color: rgb(var(--v-theme-on-surface), 0.15);
-  }
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode .line-numbers-wrapper {
-    color: rgb(var(--v-theme-on-surface-variant)) !important;
-  }
-
   // 表格：背景、文字、边框
   table {
     tr {
@@ -110,15 +101,6 @@
   }
   pre code {
     color: rgb(var(--v-theme-on-surface)) !important;
-  }
-
-  // 行号：背景 + 文字
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode::after {
-    background-color: rgb(var(--v-theme-surface-variant)) !important;
-    border-right-color: rgb(var(--v-theme-on-surface), 0.15);
-  }
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode .line-numbers-wrapper {
-    color: rgb(var(--v-theme-on-surface-variant)) !important;
   }
 
   // Prism 语法高亮：浅色配色（覆盖 prism-tomorrow 深色配色）
@@ -174,7 +156,7 @@
   }
 }
 
-// ===== GitHub 主题：深色适配（代码块/行号/表格/行内代码） =====
+// ===== GitHub 主题：深色适配（代码块/表格/行内代码） =====
 // 语法高亮见 markdown-highlight.scss
 .v-md-editor-preview.user-dark .github-markdown-body {
   // 行内代码 `xxx`
@@ -210,15 +192,6 @@
   // 代码块：普通文字
   pre code {
     color: rgb(var(--v-theme-on-surface)) !important;
-  }
-
-  // 行号：背景 + 文字
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode::after {
-    background-color: rgb(var(--v-theme-surface-variant)) !important;
-    border-right-color: rgb(var(--v-theme-on-surface), 0.15);
-  }
-  div[class*='v-md-pre-wrapper-'].line-numbers-mode .line-numbers-wrapper {
-    color: rgb(var(--v-theme-on-surface-variant)) !important;
   }
 }
 
